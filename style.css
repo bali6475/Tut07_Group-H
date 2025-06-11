@@ -1,8 +1,42 @@
-html, body {
+/* Basic reset */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-canvas {
-  display: block;
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000; /* Black background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Fill the viewport height */
+  overflow: hidden;
+}
+
+/* Centering content inside the canvas container */
+#container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* Styling for the Play/Pause button */
+button {
+  font-size: 16px;
+  padding: 10px 20px;
+  background-color: #00aaff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+button:hover {
+  background-color: #0099cc;
 }
